@@ -10,7 +10,6 @@ def Create():
         passwd="password",  #db password
         database="dbpy"
     )
-    os.system('py C:/Users/username/Desktop/Python/Project/dbconnect.py')
     mycursor = mydb.cursor()
     sql = "INSERT INTO test (name, PhoneNo) VALUES (%s,%s)"
     val = (nameEntry.get(), phoneEntry.get())
