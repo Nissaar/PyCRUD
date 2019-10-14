@@ -11,7 +11,7 @@ def ViewDB():
 def EditDB():
     os.system('py C:/Users/username/Desktop/Python/Project/Edit.py')
 
-def DeleteRow(():
+def DeleteRow():
     os.system('py C:/Users/username/Desktop/Python/Project/Delete.py')
 
 window = Tk()
