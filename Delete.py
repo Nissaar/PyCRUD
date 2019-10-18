@@ -15,7 +15,7 @@ def Delete():
     val = (IDEntry.get())
     mycursor.execute(sql, val)
     mydb.commit()
-    os.system('py C:/Users/nisgo/Desktop/Python/Project/Read.py')
+    os.system('py C:/Users/user/Desktop/Python/Project/Read.py')
 
 def Cancel():
     exit()
