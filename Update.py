@@ -14,9 +14,9 @@ mydb = mysql.connector.connect(
 def Update():
     mycursor = mydb.cursor()
     sql = "UPDATE test SET name = (%s) WHERE ID = %s"
-    sql1 = "UPDATE test SET PhoneNo = (%s) WHERE ID = %s"
+    sql1 = "UPDATE test SET Bounty = (%s) WHERE ID = %s"
     val = (nameEntry.get(),IDEntry.get())
-    val1 = (phoneEntry.get(),IDEntry.get())
+    val1 = (BountyEntry.get(),IDEntry.get())
     mycursor.execute(sql, val)
     mycursor.execute(sql1, val1)
     mydb.commit()
@@ -44,11 +44,11 @@ namelabel.pack(side = "left")
 nameEntry = Entry(twoframe, background = "white", justify = "center")
 nameEntry.pack(side= "right")
 
-phonelabel = Label(threeframe, text = "Phone Number")
-phonelabel.pack(side = "left")
+Bountylabel = Label(threeframe, text = "Bounty")
+Bountylabel.pack(side = "left")
 
-phoneEntry = Entry(threeframe, background = "white", justify = "center")
-phoneEntry.pack(side= "right")
+BountyEntry = Entry(threeframe, background = "white", justify = "center")
+BountyEntry.pack(side= "right")
 
 def fetchfromdb():
     mycursor = mydb.cursor()
@@ -58,7 +58,7 @@ def fetchfromdb():
     myresult = mycursor.fetchall()
     for val in myresult:
         nameEntry.insert(0, val[1])
-        phoneEntry.insert(0, val[2])
+        BountyEntry.insert(0, val[2])
 
 IDlabel = Label(oneframe, text = "ID")
 IDlabel.pack(side = "left")
@@ -75,8 +75,6 @@ UpdateButton.grid(column=0, row=5)
 
 cancelButton = Button(window, width = "18", background = "white", foreground = "red", text = "Cancel", command = Cancel)
 cancelButton.grid(column=0, row=7)
-
-#SAVE BUTTON
 
 window.mainloop()
 
