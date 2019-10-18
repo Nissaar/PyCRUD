@@ -6,7 +6,7 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="password", #db password
+    passwd="password",  #db password
     database="dbpy"
     )
 
@@ -28,7 +28,7 @@ tree.pack(side = 'left')
 
 tree.heading(1, text="ID")
 tree.heading(2, text="Name")
-tree.heading(3, text="Phone No")
+tree.heading(3, text="Bounty")
 
 tree.column(1, width = 159)
 tree.column(2, width = 159)
