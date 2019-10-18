@@ -3,16 +3,16 @@ import os
 from tkinter import *
 
 def Create():
-    os.system('py C:/Users/nisgo/Desktop/Python/Project/Create.py')
+    os.system('py C:/Users/user/Desktop/Python/Project/Create.py')
 
 def Read():
-    os.system('py C:/Users/nisgo/Desktop/Python/Project/Read.py')
+    os.system('py C:/Users/user/Desktop/Python/Project/Read.py')
 
 def Update():
-    os.system('py C:/Users/nisgo/Desktop/Python/Project/Update.py')
+    os.system('py C:/Users/user/Desktop/Python/Project/Update.py')
 
 def DeleteRow():
-    os.system('py C:/Users/nisgo/Desktop/Python/Project/Delete.py')
+    os.system('py C:/Users/user/Desktop/Python/Project/Delete.py')
 
 window = Tk()
 window.title("PyDB App")
