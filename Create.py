@@ -21,7 +21,7 @@ def Cancel():
     exit()
 
 window = Tk()
-window.title("Entry form")
+window.title("Create")
 window.geometry("300x100")
 
 oneframe = Frame(window)
