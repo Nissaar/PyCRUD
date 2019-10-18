@@ -20,7 +20,7 @@ def Update():
     mycursor.execute(sql, val)
     mycursor.execute(sql1, val1)
     mydb.commit()
-    os.system('py C:/Users/nisgo/Desktop/Python/Project/Read.py')
+    os.system('py C:/Users/user/Desktop/Python/Project/Read.py')
 
 def Cancel():
     exit()
