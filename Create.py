@@ -31,13 +31,13 @@ twoframe = Frame(window)
 twoframe.grid(column=0,row=1)
 
 
-namelabel = Label(oneframe, text = "Name", width=15)
+namelabel = Label(oneframe, text = "Name", width=15, bg="beige")
 namelabel.pack(side = "left")
 
 nameEntry = Entry(oneframe, background = "white", justify = "center")
 nameEntry.pack(side= "right")
 
-Bountylabel = Label(twoframe, text = "Bounty", width=15)
+Bountylabel = Label(twoframe, text = "Bounty", width=15, bg="grey")
 Bountylabel.pack(side = "left")
 
 BountyEntry = Entry(twoframe, background = "white", justify = "center")
