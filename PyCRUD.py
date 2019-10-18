@@ -18,16 +18,16 @@ window = Tk()
 window.title("PyDB App")
 window.geometry("400x500")
 
-insertButton = Button(window, height = "15", width = "25", text = "Create", background = "white", foreground = "red", command = Create)
+insertButton = Button(window, height = "15", width = "25", text = "Create", background = "grey", foreground = "red", command = Create)
 insertButton.place(x=10, y=10)
 
-readButton = Button(window, height = "15", width = "25", text = "Read", background = "white", foreground = "red", command = Read)
+readButton = Button(window, height = "15", width = "25", text = "Read", background = "grey", foreground = "red", command = Read)
 readButton.place(x=200, y=10)
 
-updateButton = Button(window, height = "15", width = "25", text = "Update", background = "white", foreground = "red", command = Update)
+updateButton = Button(window, height = "15", width = "25", text = "Update", background = "grey", foreground = "red", command = Update)
 updateButton.place(x=10, y=250)
 
-deleteButton = Button(window, height = "15", width = "25", text = "Delete", background = "white", foreground = "red", command = Delete)
+deleteButton = Button(window, height = "15", width = "25", text = "Delete", background = "grey", foreground = "red", command = DeleteRow)
 deleteButton.place(x=200, y=250)
 
 window.mainloop()
