@@ -7,12 +7,12 @@ def Create():
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="password",  #db password
+        passwd="nissaar1307",
         database="dbpy"
     )
     mycursor = mydb.cursor()
-    sql = "INSERT INTO test (name, PhoneNo) VALUES (%s,%s)"
-    val = (nameEntry.get(), phoneEntry.get())
+    sql = "INSERT INTO test (name, Bounty) VALUES (%s,%s)"
+    val = (nameEntry.get(), BountyEntry.get())
     mycursor.execute(sql,val)
     mydb.commit()
     exit()
@@ -31,17 +31,17 @@ twoframe = Frame(window)
 twoframe.grid(column=0,row=1)
 
 
-namelabel = Label(oneframe, text = "Name")
+namelabel = Label(oneframe, text = "Name", width=15)
 namelabel.pack(side = "left")
 
 nameEntry = Entry(oneframe, background = "white", justify = "center")
 nameEntry.pack(side= "right")
 
-phonelabel = Label(twoframe, text = "Phone Number")
-phonelabel.pack(side = "left")
+Bountylabel = Label(twoframe, text = "Bounty", width=15)
+Bountylabel.pack(side = "left")
 
-phoneEntry = Entry(twoframe, background = "white", justify = "center")
-phoneEntry.pack(side= "right")
+BountyEntry = Entry(twoframe, background = "white", justify = "center")
+BountyEntry.pack(side= "right")
 
 okButton = Button(window, width = "18", background = "white", foreground = "red", text = "OK", command = Create)
 okButton.place(x=10, y=70)
