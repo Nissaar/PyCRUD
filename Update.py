@@ -6,7 +6,7 @@ import os
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="nissaar1307",
+    passwd="password",  #db password
     database="dbpy"
     )
 
